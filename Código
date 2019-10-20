@@ -1,0 +1,21 @@
+import java.io.*;
+public class PromIf {
+public float n1,n2,n3;
+public float prom() {
+return (n1+n2+n3)/3;}
+public static void main (String [] args) throws IOException {
+BufferedReader entrada=new BufferedReader (new InputStreamReader (System.in));
+PromIf ob=new PromIf ();
+System.out.println("Calificación 1:");
+ob.n1=Float.parseFloat(entrada.readLine());
+System.out.println("Calificación 2:");
+ob.n2=Float.parseFloat(entrada.readLine());
+System.out.println("Calificación 3:");
+ob.n3=Float.parseFloat(entrada.readLine());
+if (ob.prom()>=9)
+System.out.println("Sobresaliente");
+else if (ob.prom()>=7)
+System.out.println("Muy bien");
+else if (ob.prom()>=5)
+System.out.println("Buen intento");
+else System.out.println("Rayos"); } }
